@@ -1,0 +1,33 @@
+---
+// 1. Importar el componente Image
+import { Image } from 'astro:assets';
+
+// 2. Importar la imagen (Asegúrate de que la ruta sea correcta desde este archivo)
+import certificadoImg from '../assets/certificado.webp';
+
+// 3. Define las dimensiones reales de tu imagen (¡CÁMBIALAS!)
+const CERT_WIDTH = 1200; // Ejemplo: ancho real en píxeles
+const CERT_HEIGHT = 893; // Ejemplo: alto real en píxeles
+---
+
+<section id="cert" class="main__section section__projects section__cert">
+    <h2 class="section__title">Certificados</h2>
+
+    <a class="section__link" href="https://ude.my/UC-cc9a7e5c-944a-4a35-9f5f-28624334f17e" target="_blank">
+        <article class="main__article">
+            <Image 
+                class="article__img" 
+                src={certificadoImg} 
+                alt="Certificado de curso"
+                width={CERT_WIDTH} 
+                height={CERT_HEIGHT} 
+                format="webp"
+            />
+            <div class="article__div">
+                <h3 class="article__title">Certificado Curso</h3>
+                <p class="article__text">Curso de Victor Robles en Udemy: JavaScript, JSON, Node, TypeScript,
+                    Angular 20, MEAN y Astro +34h</p>
+            </div>
+        </article>
+    </a>
+</section>

@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Certifications from '../components/Certifications.astro';
+import Skills from '../components/Skills.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout 
+    title="Portfolio - JaviDev" 
+    description="Soy JaviDev, desarrollador web especializado en front-end con experiencia en HTML, CSS, JavaScript y SASS. Actualmente amplío mis habilidades en TypeScript y Angular para crear aplicaciones modernas, atractivas y escalables."
+>
+    
+    <Header />
+    
+    <main class="portfolio__main">
+        <About />
+        <Projects />
+        <Certifications />
+        <Skills />
+    </main>
+    
+    <Footer />
+
+</Layout>

@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+
+import javiDevImg from '../assets/javidev.webp';
+---
+<section id="about" class="main__section section__about">
+    <div class="about__content">
+        <h2 class="section__title">Acerca de mi</h2>
+        <p class="section__text">
+            Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales.
+            Con una base sólida en HTML, CSS, JavaScript y SASS, me esfuerzo por mantenerme actualizado con
+            las últimas tecnologías y tendencias del desarrollo web. Actualmente, estoy ampliando mis
+            habilidades con TypeScript y Angular para construir aplicaciones más robustas y escalables.
+        </p>
+        <a href="#projects" class="main__btn">Ver Proyectos</a>
+    </div>
+
+    <div class="about__image">
+        <Image 
+            class="section__img" 
+            src={javiDevImg} 
+            alt="Imagen de JaviDev" 
+            width={700}
+            height={700}
+            format="webp"
+            loading="eager" 
+        />
+    </div>
+</section>
